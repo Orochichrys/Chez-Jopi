@@ -387,7 +387,11 @@ footer .lien ul li a i {
         margin: auto;
     }
     .apropos .container .image-container{
+        width:300px;
         margin-bottom: 4rem;
+    }
+    .apropos .container .image-container img{
+        width:300px;
     }
     .apropos .container .text-container{
         margin: auto;
