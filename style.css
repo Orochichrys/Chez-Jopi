@@ -115,20 +115,28 @@ header .navbar ul li a:hover, header .navbar ul li a.active{
 .apropos, .contact{
     background-color:white;
 }
-.apropos .container, .contact .container{
+.apropos .container,
+.contact .container {
     display: flex;
-    margin:0 9rem 0 9rem;
+    margin: 0 9rem 0 9rem;
+    justify-content: center; /* Assure que le contenu est centré */
+    align-items: center; /* Centrage vertical */
 }
-.apropos .container .image-container{
+
+.apropos .container .image-container {
     height: 400px;
     background: #ff0000;
-    border-radius:1rem;
+    border-radius: 1rem;
     margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.apropos .container .image-container img{
-    height:400px ;
-    width:400px ;
-   
+
+.apropos .container .image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 .apropos .container .text-container{
     margin-left: 4rem;
@@ -387,13 +395,7 @@ footer .lien ul li a i {
     }
     .apropos .container .image-container{
         margin:auto;
-        width:300px;
-        height:300px;
         margin-bottom: 4rem;
-    }
-    .apropos .container .image-container img{
-        width:300px;
-        height:300px;
     }
     .apropos .container .text-container{
         margin: auto;
@@ -414,5 +416,23 @@ footer .lien ul li a i {
     }
     .contact .container .image-container{
         margin: auto;
+    }
+}
+@media (max-width: 480px) {
+    .apropos .container,
+    .contact .container {
+        margin: 0 2rem 0 2rem;
+        justify-content: center;
+    }
+
+    .apropos .container .text-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .apropos .container .image-container {
+        margin-bottom: 2rem;
+        width: 250px;
+        height: 250px;
     }
 }
