@@ -387,10 +387,10 @@ footer .lien ul li a i {
     }
     .apropos .container .image-container{
         width:300px;
-        margin-bottom: 4rem;*/
+        margin-bottom: 4rem;
     }
     .apropos .container .image-container img{
-        
+        width:300px;
     }
     .apropos .container .text-container{
         margin: auto;
