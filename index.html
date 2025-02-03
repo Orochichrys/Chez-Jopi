@@ -130,7 +130,7 @@
                     </div>
                 </div>
 
-                <div class="item">
+                <!--<div class="item">
                     <div class="image-container">
                         <img src="images/nt5.jpeg" alt="">
                     </div>
@@ -145,7 +145,7 @@
                             <a href="#">Commander</a>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
                 <div class="item">
                     <div class="image-container">
@@ -196,7 +196,7 @@
                     </div>
                     <div class="lien">
                         <ul>
-                            <li><a href="https://wa.me/2250584790349"><i class='bx bxl-whatsapp'></i></a></li>
+                            <li><a href="https://wa.me/2250779241685"><i class='bx bxl-whatsapp'></i></a></li>
                             <li><a href="https://www.facebook.com/jopitraiteur?mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a></li>
                         </ul>
                     </div>
@@ -210,7 +210,7 @@
         <footer>
             <div class="lien">
                 <ul>
-                    <li><a href="https://wa.me/2250584790349"><i class='bx bxl-whatsapp'></i></a></li>
+                    <li><a href="https://wa.me/2250779241685"><i class='bx bxl-whatsapp'></i></a></li>
                     <li><a href="https://www.facebook.com/jopitraiteur?mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a></li>
                 </ul>
             </div>
@@ -227,13 +227,13 @@
         button.addEventListener("click", function(event) {
             event.preventDefault(); // Empêche le lien de recharger la page
 
-            let numero = "2250584790349"; // Ton numéro WhatsApp
+            let numero = "2250779241685"; // Ton numéro WhatsApp
             let item = this.closest(".item"); // Trouver l'élément parent contenant les données
             let nom = item.querySelector(".titre span").textContent.trim();
             let prix = item.querySelector(".prix span").textContent.trim();
             let image = item.querySelector(".image-container img").src; // Récupérer l'URL de l'image
 
-            let message = `Bonjour, je voudrais commander un ${nom} à ${prix};
+            let message = `Bonjour, je voudrais commander un ${nom} à ${prix}. Voir l'image du plat ici : ${image}`;
             let url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(message)}`;
 
             window.open(url, "_blank"); // Ouvre WhatsApp dans un nouvel onglet
