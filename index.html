@@ -215,7 +215,7 @@
             let prix = item.querySelector(".prix span").textContent.trim();
             let image = item.querySelector(".image-container img").src; // Récupérer l'URL de l'image
 
-            let message = `Bonjour, je voudrais commander un ${nom} à ${prix}. Voir l'image du plat ici : ${image}`;
+            let message = `Bonjour, je voudrais commander un ${nom} à ${prix}`;
             let url = `https://api.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(message)}`;
 
             window.open(url, "_blank"); // Ouvre WhatsApp dans un nouvel onglet
