@@ -39,7 +39,7 @@ header .navbar ul li{
 header .navbar ul li a{
     display: block;
     color:white;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 900;
     text-decoration: none;
     margin-left: 1rem;
@@ -147,7 +147,7 @@ header .navbar ul li a:hover, header .navbar ul li a.active{
 }
 .apropos .container .text-container p{
     color: #ffcc00; 
-    font-size:1.2rem;
+    font-size:1.1rem;
 }
 /*couleur menu et footer*/
 .menu, footer{
